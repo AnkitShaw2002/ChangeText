@@ -1,0 +1,28 @@
+<!-- Change text on button click
+1) When you click a button, change the text inside a <p> tag. -->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Change text on click</title>
+  </head>
+  <body>
+    <h2>Botton</h2>
+    <button id="Btn">Click</button>
+    <p id="text1">Hi</p>
+    
+
+    <script>
+      function ChangeText() {  //declaring the function to change text  
+        
+          const text = document.getElementById("text1");//accessing the text by id
+          text.innerHTML = "Hello";//get inside content of html using innerHTML and also change it using text
+        
+      }
+
+      document.getElementById("Btn").addEventListener("click", ChangeText);
+      //using addEventListener 
+      // to know the botton "Btn" is cliked,whick is a event of click
+    </script>
+  </body>
+</html>
