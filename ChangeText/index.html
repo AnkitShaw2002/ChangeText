@@ -16,8 +16,9 @@
       function ChangeText() {  //declaring the function to change text  
         
           const text = document.getElementById("text1");//accessing the text by id
-          text.innerHTML = "Hello";//get inside content of html using innerHTML and also change it using text
-        
+          const original = "Hi";//get inside content of html using innerHTML and also change it using text
+          const change = "Hello";
+          text.innerHTML=text.innerHTML===original?change:original;
       }
 
       document.getElementById("Btn").addEventListener("click", ChangeText);
@@ -27,3 +28,4 @@
   </body>
 
 </html>
+
